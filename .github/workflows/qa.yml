@@ -1,9 +1,11 @@
-name: trigger jenkins job
+name: Publish PowerShell Module
 on: [push]
 jobs:
-  sonarqube-trigger-push:    
+  publish-to-gallery:
     runs-on: windows-latest
     steps:
-    - name: Trigger jenkins job
-      uses: ykerkeni/sonarqube-scan-action-windows@main      
-        
+      - uses: actions/checkout@v3
+      - name: Build and publish        
+        shell: pwsh
+        run: |
+          echo "Hello World"
