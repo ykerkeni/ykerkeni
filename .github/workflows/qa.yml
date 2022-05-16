@@ -7,4 +7,4 @@ jobs:
     - name: Trigger jenkins job
       uses: ykerkeni/sonarqube-scan-action-windows@main   
       with:
-        url: ""       
+        url: "helllo yassine"       
