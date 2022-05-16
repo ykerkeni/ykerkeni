@@ -2,7 +2,9 @@ name: Publish PowerShell Module
 on: [push]
 jobs:
   jenkins-trigger-push:    
-    runs-on: windows-latest
+    runs-on: self-hosted
     steps:
     - name: Trigger jenkins job
-      uses: ykerkeni/sonarqube-scan-action-windows@main     
+      uses: ykerkeni/sonarqube-scan-action-windows@main   
+      with:
+        url: ""       
