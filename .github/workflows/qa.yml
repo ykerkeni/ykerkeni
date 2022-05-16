@@ -5,4 +5,4 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Trigger jenkins job
-      uses: ykerkeni/HamdiMarwa/jenkins-trigger-windows/jenkins-trigger@main     
+      uses: ykerkeni/sonarqube-scan-action-windows@main     
